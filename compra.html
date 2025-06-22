@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Garanta já o seu manto!</title>
+    <link rel="stylesheet" href="compra.css">
+    <link rel="icon" type="image/ico" href="flaescudo.ico">
+</head>
+<body>
+    
+    <header>
+        <a href="#">
+           <div id="logo"></div>
+        </a>
+        
+        <div class="alllinks">
+            <a href="home.html" id="home"> <div class="linkshead">Home</div> </a>
+            <a href="sobre.html" id="home"><div class="linkshead">Sobre</div> </a>
+            <a href="medidas.html" id="medidas"> <div class="linkshead">Medidas</div> </a>
+            <a href="https://www.instagram.com/flamengo/">
+                <div class="linkshead" id="insta">Instagram</div>
+            </a>
+                <img src="cart_icon_160296.png" alt="Carrinho de Compras" id="carrinhoimg">
+        </div>
+            <div id="linha"></div>
+    </header>
+
+    <form method="POST" action="finalizarcompra.py">
+           <h2>Finalizar Compra</h2>
+           <!-- dp -->
+           <fieldset id="fieldsetdados" class="fieldsets">
+           <div class="titulos"><h3>Dados Pessoais</h3></div>
+           <div class="infos">
+                <label><p>Nome Completo</p>
+                     <input type="text" name="nome" size="45" required /></label>
+                <label><p>E-mail </p>
+                    <input type="email" name="email" size="45" required /></label>
+                <label><p>Telefone </p>
+                    <input type="tel" name="telefone" size="20" required maxlength="11"/></label>
+                <label>CPF
+                    <input type="text" name="cpf" size="20" required  maxlength="11"/></label>
+                <label><p>Data de Nascimento </p>
+                    <input type="date" name="datanascimento" /></label>
+        
+           <p>Gênero:</p>
+           <select name="genero">
+              <option value="selecionar">Selecionar</option>
+              <option value="masculino">Masculino</option>
+              <option value="feminino">Feminino</option>
+              <option value="outro">Outro</option>
+           </select>
+     
+           <p><label><input type="checkbox" name="newsletter" /> Desejo receber novidades e promoções</label></p>
+            </div>
+            </fieldset>
+
+            <!-- dpag -->
+            <fieldset id="fieldsetpagamento" class="fieldsets">
+            <div class="titulos"><h3>Dados de Pagamento</h3></div>
+            <div class="infos">
+           <label><p>Método de Pagamento
+              <select name="metododepagamento" required>
+                 <option value="">Selecionar</option>
+                 <option value="cartao_credito">Cartão de Crédito</option>
+                 <option value="cartao_debito">Cartão de Débito</option>
+                 <option value="pix">PIX</option>
+                 <option value="boleto">Boleto</option>
+              </select>
+           </label>
+     
+           <label><p>Número do Cartão </p>
+            <input type="text" name="numero_cartao" size="25" placeholder="0000 0000 0000 0000" maxlength="16"/></label>
+            <label>Validade
+                <input type="text" name="validade" size="5" placeholder="MM/AA" /></label>
+           <label><p>Nome no Cartão</p>
+             <input type="text" name="nome_cartao" size="25" /></label>
+           <label>CVV
+            <input type="text" name="cvv" size="5" placeholder="123" /></label>
+     
+           <p>Parcelas:
+           <select name="parcelas">
+              <option value="1">1x à vista</option>
+              <option value="2">2x sem juros</option>
+              <option value="3">3x sem juros</option>
+              <option value="6">6x com juros</option>
+              <option value="12">12x com juros</option>
+           </select>
+     
+           <p><label><input type="checkbox" name="salvarcartao" /> Salvar dados do cartão</label>
+           </div>
+           </fieldset>
+
+           <!-- d ent -->
+           <fieldset id="fieldsetentrega" class="fieldsets">
+            <div class="titulos"><h3>Dados de Entrega</h3></div>
+            <div class="infos">
+           <label><p>CEP <input type="text" name="cep" size="10" placeholder="00000-000" required /></label>
+           Tipo de Entrega:
+           <select name="tipo_entrega">
+              <option value="normal">Normal (5-7 dias)</option>
+              <option value="expressa">Expressa (2-3 dias)</option>
+              <option value="retirada">Retirada na loja</option>
+           </select>
+     
+           <label><p>Endereço</p>
+            <input type="text" name="endereco" size="45" required size="50"/></label>
+           <label><p>Complemento</p>
+             <input type="text" name="complemento" size="30" /></label>
+             <label>Número
+             <input type="text" name="numero" size="10" required /></label>
+           <label><p>Bairro</p>
+             <input type="text" name="bairro" size="25" required /></label>
+           <label><p>Cidade</p>
+             <input type="text" name="cidade" size="25" required /></label>
+     
+           Estado (UF):
+           <select name="estado" required>
+              <option value="">UF</option>
+              <option value="RJ">RJ</option>
+              <option value="SP">SP</option>
+              <option value="MG">MG</option>
+              <option value="ES">ES</option>
+              <option value="BA">BA</option>
+              <option value="PR">PR</option>
+              <option value="RS">RS</option>
+              <option value="SC">SC</option>
+           </select>
+     
+           <label><p>Observações da Entrega:</label>
+           <textarea name="observacoes" rows="3" cols="50" placeholder="Instruções especiais para entrega..."></textarea>
+        </div>
+        <p><div class="botao"><input  type="submit" value="Finalizar Compra" /></div>
+            </fieldset>
+           
+           
+        </fieldset>
+     </form>
+     
+    </div>
+</body>
+</html>

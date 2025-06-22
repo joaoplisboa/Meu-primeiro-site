@@ -1,0 +1,770 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)), url('torcidafla.jpeg');
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    background-repeat: no-repeat;
+    font-family: Avenir, sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 30px;
+    animation: container 1s ease-in-out;
+    margin: 0 auto;
+}
+
+@keyframes container {
+    from { opacity: 0.5 }
+    to { opacity: 1 }
+}
+
+.container p {
+    margin-left: 50px;
+    padding-right: 20px;
+    line-height: 1.4;
+}
+
+header {
+    width: 100%;
+    height: 160px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: inherit;
+    opacity: 1;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    animation: header 1s ease-in-out;
+}
+
+@keyframes header {
+    from { opacity: 0.5 }
+    to { opacity: 1 }
+}
+
+#logo {
+    width: 140px;
+    height: 150px;
+    background: url(flaescudo-2-2.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+
+.alllinks {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.linkshead {
+    font-size: 20px;
+    font-family: Avenir, sans-serif;
+    font-weight: bold;
+    transition: text-decoration 0.2s ease, color 0.3s ease;
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.linkshead::after {
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, #ffffff, #ffffff);
+    transform: translateX(-50%);
+    transition: width 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.linkshead:hover::after {
+    width: 100%;
+}
+
+#insta{
+    color: rgb(255, 255, 255);
+}
+#home{
+    color: rgb(255, 255, 255);
+}
+#medidas {
+    color: rgb(255, 255, 255);
+}
+
+.historiageral {
+    width: 100%;
+    min-height: 480px;
+    height: auto;
+    background-color: rgb(200, 27, 27);
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-family: avenir, sans-serif;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 40px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.historiageral:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgb(218, 10, 10);
+}
+
+.historiageral h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 40px;
+    text-decoration: underline;
+    line-height: 1.2;
+}
+
+.historiageral p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.historiageralimg {
+    background-image: url(remadoresfla.jpeg);
+    width: 400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+    margin-left: 40px;
+}
+
+.mascote {
+    width: 100%;
+    min-height: 480px;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-family: avenir, sans-serif;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 40px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mascote:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+.mascote h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 40px;
+    text-decoration: underline;
+    margin-left: 40px;
+    line-height: 1.2;
+}
+
+.mascote p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    margin-left: 40px;
+    line-height: 1.5;
+}
+
+.mascoteimg {
+    background-image: url(mascotefla.jpeg);
+    width: 500px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+}
+
+.historiarn {
+    width: 100%;
+    min-height: 480px;
+    height: auto;
+    background-color: rgb(200, 27, 27);
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-family: avenir, sans-serif;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 40px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.historiarn:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgb(218, 10, 10);
+}
+
+.historiarn h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 40px;
+    text-decoration: underline;
+    line-height: 1.2;
+}
+
+.historiarn p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.historiarnimg {
+    background-image: url(camisarn.jpeg);
+    width: 550px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+    margin-left: 40px;
+}
+
+#transicaohistfooter {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(rgb(200, 27, 27), rgb(0, 0, 0));
+}
+
+footer {
+    width: 100%;
+    height: 180px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+footer p {
+    font-family: Avenir, sans-serif;
+    font-size: 15px;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: 400px;
+        font-size: 24px;
+    }
+    
+    .container p {
+        margin-left: 30px;
+        padding-right: 30px;
+        line-height: 1.4;
+    }
+    
+    header {
+        height: 120px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    
+    #logo {
+        width: 100px;
+        height: 100px;
+        margin-left: 0;
+    }
+    
+    .alllinks {
+        margin-right: 0;
+        gap: 15px;
+    }
+    
+    .linkshead {
+        font-size: 16px;
+        margin: 10px;
+    }
+    
+    .historiageral {
+        height: auto;
+        min-height: 500px;
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+    
+    .mascote {
+        height: auto;
+        min-height: 500px;
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+    
+    .historiarn {
+        height: auto;
+        min-height: 500px;
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+    
+    .historiageral:hover {
+        transform: scale(1.01);
+    }
+    
+    .mascote:hover {
+        transform: scale(1.01);
+    }
+    
+    .historiarn:hover {
+        transform: scale(1.01);
+    }
+    
+    .historiageral h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        line-height: 1.2;
+    }
+    
+    .mascote h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        line-height: 1.2;
+        margin-left: 0;
+    }
+    
+    .historiarn h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        line-height: 1.2;
+    }
+    
+    .historiageral p {
+        font-size: 18px;
+        margin-left: 0;
+        margin-bottom: 25px;
+        line-height: 1.6;
+    }
+    
+    .mascote p {
+        font-size: 18px;
+        margin-left: 0;
+        margin-bottom: 25px;
+        line-height: 1.6;
+    }
+    
+    .historiarn p {
+        font-size: 18px;
+        margin-left: 0;
+        margin-bottom: 25px;
+        line-height: 1.6;
+    }
+    
+    .historiageralimg {
+        width: 100%;
+        max-width: 400px;
+        height: 300px;
+        margin: 25px auto 0;
+    }
+    
+    .mascoteimg {
+        width: 100%;
+        max-width: 400px;
+        height: 300px;
+        margin: 25px auto 0;
+    }
+    
+    .historiarnimg {
+        width: 100%;
+        max-width: 400px;
+        height: 300px;
+        margin: 25px auto 0;
+    }
+    
+    #transicaohistfooter {
+        height: 200px;
+    }
+    
+    footer {
+        height: 120px;
+        padding: 0 20px;
+    }
+    
+    footer p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        height: 350px;
+        font-size: 20px;
+    }
+    
+    .container p {
+        margin-left: 20px;
+        padding-right: 20px;
+        line-height: 1.4;
+    }
+    
+    header {
+        height: 110px;
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+    }
+    
+    #logo {
+        width: 70px;
+        height: 70px;
+        order: 1;
+    }
+    
+    .alllinks {
+        order: 2;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .linkshead {
+        font-size: 14px;
+        margin: 5px;
+    }
+    
+    .historiageral {
+        padding: 30px 20px;
+        min-height: 450px;
+        height: auto;
+    }
+    
+    .mascote {
+        padding: 30px 20px;
+        min-height: 450px;
+        height: auto;
+    }
+    
+    .historiarn {
+        padding: 30px 20px;
+        min-height: 450px;
+        height: auto;
+    }
+    
+    .historiageral h1 {
+        font-size: 26px;
+        margin-bottom: 20px;
+        line-height: 1.3;
+    }
+    
+    .mascote h1 {
+        font-size: 26px;
+        margin-bottom: 20px;
+        line-height: 1.3;
+        margin-left: 0;
+    }
+    
+    .historiarn h1 {
+        font-size: 26px;
+        margin-bottom: 20px;
+        line-height: 1.3;
+    }
+    
+    .historiageral p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    
+    .mascote p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        margin-left: 0;
+    }
+    
+    .historiarn p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    
+    .historiageralimg {
+        height: 280px;
+        margin-top: 20px;
+    }
+    
+    .mascoteimg {
+        height: 280px;
+        margin-top: 20px;
+    }
+    
+    .historiarnimg {
+        height: 280px;
+        margin-top: 20px;
+    }
+    
+    #transicaohistfooter {
+        height: 150px;
+    }
+    
+    footer {
+        height: 100px;
+        padding: 0 15px;
+    }
+    
+    footer p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        height: 300px;
+        font-size: 18px;
+    }
+    
+    .container p {
+        margin-left: 15px;
+        padding-right: 15px;
+        line-height: 1.4;
+    }
+    
+    header {
+        height: 100px;
+        padding: 10px;
+    }
+    
+    #logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .linkshead {
+        font-size: 13px;
+        margin: 4px;
+    }
+    
+    .historiageral {
+        padding: 25px 15px;
+        min-height: 400px;
+    }
+    
+    .mascote {
+        padding: 25px 15px;
+        min-height: 400px;
+    }
+    
+    .historiarn {
+        padding: 25px 15px;
+        min-height: 400px;
+    }
+    
+    .historiageral h1 {
+        font-size: 22px;
+        margin-bottom: 15px;
+        line-height: 1.3;
+    }
+    
+    .mascote h1 {
+        font-size: 22px;
+        margin-bottom: 15px;
+        line-height: 1.3;
+        margin-left: 0;
+    }
+    
+    .historiarn h1 {
+        font-size: 22px;
+        margin-bottom: 15px;
+        line-height: 1.3;
+    }
+    
+    .historiageral p {
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 18px;
+    }
+    
+    .mascote p {
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 18px;
+        margin-left: 0;
+    }
+    
+    .historiarn p {
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 18px;
+    }
+    
+    .historiageralimg {
+        height: 250px;
+        margin-top: 15px;
+    }
+    
+    .mascoteimg {
+        height: 250px;
+        margin-top: 15px;
+    }
+    
+    .historiarnimg {
+        height: 250px;
+        margin-top: 15px;
+    }
+    
+    #transicaohistfooter {
+        height: 120px;
+    }
+    
+    footer {
+        height: 90px;
+        padding: 0 10px;
+    }
+    
+    footer p {
+        font-size: 11px;
+        line-height: 1.4;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        height: 280px;
+        font-size: 16px;
+    }
+    
+    .container p {
+        margin-left: 12px;
+        padding-right: 12px;
+        line-height: 1.4;
+    }
+    
+    header {
+        height: 90px;
+        padding: 8px;
+    }
+    
+    #logo {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .linkshead {
+        font-size: 12px;
+        margin: 3px;
+    }
+    
+    .historiageral {
+        padding: 20px 12px;
+        min-height: 380px;
+    }
+    
+    .mascote {
+        padding: 20px 12px;
+        min-height: 380px;
+    }
+    
+    .historiarn {
+        padding: 20px 12px;
+        min-height: 380px;
+    }
+    
+    .historiageral h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        line-height: 1.3;
+    }
+    
+    .mascote h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        line-height: 1.3;
+        margin-left: 0;
+    }
+    
+    .historiarn h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        line-height: 1.3;
+    }
+    
+    .historiageral p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+    
+    .mascote p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+        margin-left: 0;
+    }
+    
+    .historiarn p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+    
+    .historiageralimg {
+        height: 220px;
+        margin-top: 15px;
+    }
+    
+    .mascoteimg {
+        height: 220px;
+        margin-top: 15px;
+    }
+    
+    .historiarnimg {
+        height: 220px;
+        margin-top: 15px;
+    }
+    
+    #transicaohistfooter {
+        height: 100px;
+    }
+    
+    footer {
+        height: 80px;
+        padding: 0 8px;
+    }
+    
+    footer p {
+        font-size: 10px;
+        line-height: 1.4;
+    }
+}

@@ -1,0 +1,447 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: avenir, sans-serif;
+    background: rgb(32, 32, 32);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: body 1.1s linear;
+    min-height: 100vh;
+}
+
+@keyframes body {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+header {
+    width: 100%;
+    height: 160px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0 20px;
+    position: relative;
+    opacity: 1;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    animation: header 1s ease-in-out;
+    flex-shrink: 0;
+}
+
+@keyframes header {
+    from {opacity: 0.5}
+    to {opacity: 1}
+}
+
+#logo {
+    width: 140px;
+    height: 150px;
+    background: url(flaescudo-2-2.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 10px;
+    flex-shrink: 0;
+}
+
+.alllinks {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.linkshead {
+    font-size: 20px;
+    font-family: Avenir, sans-serif;
+    font-weight: bold;
+    transition: text-decoration 0.2s ease, color 0.3s ease;
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    align-items: center;
+}
+
+.linkshead:hover {
+    cursor: pointer;
+}
+
+.linkshead::after {
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, #ffffff, #ffffff);
+    transform: translateX(-50%);
+    transition: width 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.linkshead:hover::after {
+    width: 100%;
+}
+
+#insta {
+    color: rgb(255, 255, 255);
+}
+
+#home {
+    color: rgb(255, 255, 255);
+}
+
+#medidas {
+    color: rgb(255, 255, 255);
+}
+
+#carrinhoimg {
+    width: 40px;
+    height: 40px;
+    margin-left: 500px;
+}
+
+#carrinhoimg:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    margin: 20px 0;
+    padding: 0 20px;
+    display: block;
+    width: 100%;
+}
+
+.fieldsets {
+    margin: 0 auto 20px auto;
+    width: 550px;
+    max-width: calc(100% - 40px);
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: white;
+    padding: 0;
+    overflow: hidden;
+    display: block;
+}
+
+.fieldsets:hover {
+    transform: scale(1.01);
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px rgb(106, 15, 15);
+}
+
+.fieldsets h3 {
+    margin: 0;
+    padding: 15px 20px;
+    background-color: rgb(209, 17, 17);
+    color: white;
+    border-radius: 8px 8px 0px 0px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.titulos {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(209, 17, 17);
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infos {
+    padding: 20px;
+    display: block;
+}
+
+input {
+    border-radius: 3px;
+    border: 1px inset;
+    padding: 8px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid rgb(224, 13, 13);
+    box-shadow: 0 0 3px rgb(224, 13, 13);
+    border-radius: 5px;
+}
+
+textarea:focus {
+    outline: none;
+    border: 2px solid rgb(224, 13, 13);
+    box-shadow: 0 0 3px rgb(224, 13, 13);
+    border-radius: 5px;
+}
+
+textarea {
+    border-radius: 5px;
+    border: 1px inset;
+    padding: 8px;
+    font-size: 16px;
+}
+
+input[name="endereco"] {
+    width: 350px;
+    max-width: 100%;
+}
+
+input[name="cpf"] {
+    width: 130px;
+    max-width: 100%;
+}
+
+input[type="submit"] {
+    width: 300px;
+    max-width: calc(100% - 20px);
+    border-radius: 50px;
+    height: 75px;
+    font-family: Avenir, sans-serif;
+    font-size: 20px;
+    background-color: rgb(209, 17, 17);
+    border: none;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 0 7px rgb(224, 13, 13);
+    margin: 20px auto;
+    display: block;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+    background-color: rgb(224, 13, 13);
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: auto;
+        min-height: 120px;
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    #logo {
+        width: 100px;
+        height: 100px;
+        margin-left: 0;
+    }
+
+    .alllinks {
+        margin-right: 0;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .linkshead {
+        font-size: 18px;
+        margin: 10px;
+    }
+
+    #carrinhoimg {
+        margin-left: 0;
+        width: 35px;
+        height: 35px;
+    }
+
+    h2 {
+        font-size: 32px;
+        margin: 15px 0;
+        padding: 0 15px;
+    }
+
+    .fieldsets {
+        width: calc(100% - 30px);
+        margin: 0 auto 15px auto;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        min-height: 100px;
+        padding: 10px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .alllinks {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .linkshead {
+        font-size: 16px;
+        margin: 5px 8px;
+    }
+
+    #carrinhoimg {
+        width: 30px;
+        height: 30px;
+        margin-left: 0;
+    }
+
+    h2 {
+        font-size: 28px;
+        margin: 15px 0;
+        padding: 0 10px;
+        text-align: center;
+        display: block;
+        width: 100%;
+        color: rgb(255, 255, 255);
+    }
+
+    .fieldsets {
+        width: calc(100% - 20px);
+        margin: 0 auto 15px auto;
+        border-radius: 8px;
+        display: block;
+        background-color: white;
+    }
+
+    .fieldsets h3 {
+        padding: 12px 15px;
+        font-size: 18px;
+        background-color: rgb(209, 17, 17);
+        color: white;
+        margin: 0;
+        border-radius: 6px 6px 0 0;
+    }
+
+    .infos {
+        padding: 15px;
+        display: block;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    textarea {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    input[name="endereco"] {
+        width: 100%;
+    }
+
+    input[name="cpf"] {
+        width: 100%;
+    }
+
+    input[type="submit"] {
+        width: calc(100% - 20px);
+        max-width: 280px;
+        height: 55px;
+        font-size: 18px;
+        margin: 20px auto;
+        display: block;
+        border-radius: 30px;
+    }
+}
+
+@media screen and (max-width: 393px) {
+    h2 {
+        font-size: 26px;
+        margin: 12px 0;
+        padding: 0 8px;
+    }
+
+    .fieldsets {
+        width: calc(100% - 16px);
+        margin: 0 auto 12px auto;
+    }
+
+    .infos {
+        padding: 12px;
+    }
+
+    input[type="submit"] {
+        width: calc(100% - 16px);
+        height: 50px;
+        font-size: 16px;
+        margin: 15px auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    header {
+        padding: 8px;
+    }
+
+    .alllinks {
+        gap: 8px;
+    }
+
+    .linkshead {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    h2 {
+        font-size: 22px;
+        margin: 10px 0;
+        padding: 0 5px;
+    }
+
+    .fieldsets {
+        width: calc(100% - 10px);
+        margin: 0 auto 10px auto;
+    }
+
+    .infos {
+        padding: 10px;
+    }
+
+    input[type="submit"] {
+        width: calc(100% - 10px);
+        height: 45px;
+        font-size: 14px;
+        margin: 12px auto;
+    }
+}
