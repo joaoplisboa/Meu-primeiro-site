@@ -1,0 +1,501 @@
+body{
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.container{
+  width: 100%;
+  max-width: 1280px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.91), rgba(0, 0, 0, 0.91)), url('torcidafla.jpeg');
+  background-size: cover;
+  text-align: center;
+  animation: container 1s linear;
+  margin: 0 auto;
+}
+@keyframes container {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
+.escudocentro {
+  width: 500px;
+  height: 300px;
+  background: url('flaeadidas-removebg-preview-removebg-preview.png') no-repeat center center;
+  background-size: contain;
+  animation: escudocentro 2s linear;
+}
+@keyframes escudocentro {
+   from {opacity: 0}
+   to {opacity: 1}
+}
+header{
+  width: 100%;
+  height: 160px;
+  background-color: rgb(205, 15, 15);
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  position:inherit;  
+  justify-content: center;
+  position: sticky;
+  opacity: 0.98;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+header:hover{
+  opacity: 1  ;
+}
+#logo{
+  width: 140px;
+  height: 150px;
+  background: url(flaescudo-2-2.png);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+
+}  
+.alllinks{
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+.linkshead{
+  font-size: 20px;
+  font-family: Avenir,sans-serif;
+  font-weight: bold;
+  transition: text-decoration 0.2s ease, color 0.3s ease;
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  align-items: center;
+}
+.linkshead:hover{
+  cursor: pointer;
+}
+.linkshead::after{
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  left: 50%;   
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, #000000, #000000);
+  transform: translateX(-50%);
+  transition: width 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.linkshead:hover::after{
+  width: 100%;
+}
+#insta{
+  color:black;
+}
+#home{
+  color: black;
+}
+#medidas{
+  color: black;
+}
+#carrinhoimg{
+  width: 40px;
+  height: 40px;
+  margin-left: 500px;
+}
+#carrinhoimg:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+.produtoscontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-items: center;
+}
+#camisa1{
+  background-color: #ebebeb; 
+  background-image: url(frentecamisa2025rubronegra.jpeg);
+  border: none;
+  padding: 10px;
+  width: 291px;
+  height: 490px;
+  margin-left: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Avenir,sans-serif;
+}
+#camisa1:hover{   
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  background-image: url(costascamisa25rn.jpeg);
+  overflow: hidden;
+}
+#camisa2{
+  background-color: #ebebeb; 
+  background-image: url(frentecamisa2025branca.jpeg);
+  border: none;
+  padding: 10px;
+  width: 291px;
+  height: 490px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Avenir,sans-serif;
+}
+#camisa2:hover{
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  background-image: url(costascamisafla25branca.jpeg);
+}
+#camisa3{
+  background-color: #ebebeb; 
+  background-image: url(frentecamisa2024rn.jpeg);
+  border: none;
+  padding: 10px;
+  width: 291px;
+  height: 490px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Avenir,sans-serif;
+}
+#camisa3:hover{
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  background-image: url(costascamisafla24rn.jpeg);
+}
+#camisa4{
+  background-color: #ebebeb; 
+  background-image: url(frentecamisa2024branca.jpeg);
+  border: none;
+  padding: 10px;
+  width: 291px;
+  height: 490px;
+  margin-left: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Avenir,sans-serif;
+}
+#camisa4:hover{
+  background-image: url(costascamisa2024branca.jpeg);
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+#camisa5{
+  background-color: #ebebeb; 
+  background-image: url(frentecamisarn87-removebg-preview.png);
+  border: none;
+  padding: 10px;
+  width: 291px;
+  height: 490px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Avenir,sans-serif;
+}
+#camisa5:hover{
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  background-image: url(costas87-removebg-preview.png);
+}
+#camisa6{
+  background-color: #ebebeb; 
+  background-image: url(frentecamisafla100-removebg-preview.png);
+  border: none;
+  padding: 10px;
+  width: 291px;
+  height: 490px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Avenir,sans-serif;
+}
+#camisa6:hover{
+  cursor: pointer;
+  background-image: url(costasfla100.png);
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+.comprar{
+  margin-top: 10px;
+  margin-left: 60px;
+  width: 180px;
+  height: 60px;
+  background-color: rgb(205, 15, 15);
+  border-radius: 7px;
+  border: none;
+  font-family: Avenir,sans-serif;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease; 
+}
+.comprar:hover{
+  cursor: pointer;
+  background-color: rgb(255, 0, 0);
+  transition: background-color 0.3s ease;
+  overflow: visible;
+  transform: scale(1.02);
+  transition: transform 0.5s ease;
+  box-shadow: 0 0 5px rgb(221, 7, 7);
+}
+.divisao{
+  margin-top: 320px;
+}
+.divretro{
+  margin-top: 295px;
+}
+footer{
+  width: 100%;
+  height: 180px; 
+  background-color: black;
+  display: flex;
+  position: bottom fixed;
+  margin-top: 200px;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+footer p{
+  font-family: Avenir,sans-serif;
+  font-size: 15px;
+  margin-left: 320px;
+}
+
+
+@media (max-width: 1200px) {
+.container {
+  width: 100%;
+}
+#carrinhoimg {
+  margin-left: 300px;
+} 
+.produtoscontainer {
+  padding: 30px 20px;
+  gap: 30px;
+} 
+#camisa1, #camisa4 {
+  margin-left: 0;
+}
+}
+
+@media (max-width: 1024px) {
+#carrinhoimg {
+  margin-left: 200px;
+}  
+.produtoscontainer {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 30px;
+}
+#camisa1{
+  margin-left: 0;
+}
+#camisa2{
+  margin-left: 0;
+}
+#camisa3{
+  margin-left: 0;
+}
+#camisa4{
+  margin-left: 0;
+}
+#camisa5{
+  margin-left: 0;
+}
+#camisa6{
+  margin-left: 0;
+}
+}
+
+@media (max-width: 768px) {
+.container{
+  height: 500px;
+} 
+.escudocentro{
+  width: 300px;
+  height: 200px;
+}
+header{
+  height: auto;
+  min-height: 120px;
+  flex-direction: column;
+  padding: 15px 10px;
+  gap: 10px;
+} 
+#logo{
+  margin-left: 0;
+} 
+.alllinks{
+  margin-right: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+} 
+.linkshead{
+  margin: 5px 10px;
+  font-size: 16px;
+}
+#carrinhoimg{
+  margin-left: 0;
+  margin-top: 5px;
+}  
+.produtoscontainer{
+  grid-template-columns: 1fr;
+  gap: 25px;
+  padding: 20px 15px;
+} 
+#camisa1{
+  margin-left: 0;
+  width: 100%;
+  max-width: 300px;
+  height: 450px;
+} 
+#camisa2{
+  margin-left: 0;
+  width: 100%;
+  max-width: 300px;
+  height: 450px;
+} 
+#camisa3{
+  margin-left: 0;
+  width: 100%;
+  max-width: 300px;
+  height: 450px;
+} 
+#camisa4{
+  margin-left: 0;
+  width: 100%;
+  max-width: 300px;
+  height: 450px;
+} 
+#camisa5{
+  margin-left: 0;
+  width: 100%;
+  max-width: 300px;
+  height: 450px;
+} 
+#camisa6{
+  margin-left: 0;
+  width: 100%;
+  max-width: 300px;
+  height: 450px;
+} 
+.comprar {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 160px;
+  height: 50px;
+  font-size: 18px;
+}
+  
+.divisao{
+  margin-top: 280px;
+}
+.divretro {
+  margin-top: 280px;
+}
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  height: auto;
+  min-height: 120px;
+}
+footer p {
+  margin-left: 0;
+  font-size: 13px;
+  text-align: center;
+}
+}
+
+@media (max-width: 480px) {
+.container {
+  height: 300px;
+}
+.escudocentro {
+  width: 200px;
+  height: 120px;
+}
+header {
+  min-height: 100px;
+  padding: 10px 5px;
+}
+#logo {
+  width: 80px;
+  height: 90px;
+} 
+.linkshead {
+  font-size: 14px;
+  margin: 3px 5px;
+}
+#carrinhoimg {
+  width: 30px;
+  height: 30px;
+}
+.produtoscontainer {
+  padding: 15px 10px;
+  gap: 20px;
+}
+#camisa1{
+  max-width: 280px;
+  height: 400px;
+}
+#camisa2{
+  max-width: 280px;
+  height: 400px;
+}
+#camisa3{
+  max-width: 280px;
+  height: 400px;
+}
+#camisa4{
+  max-width: 280px;
+  height: 400px;
+}
+#camisa5{
+  max-width: 280px;
+  height: 400px;
+}
+#camisa6{
+  max-width: 280px;
+  height: 400px;
+}
+.comprar {
+  width: 140px;
+  height: 45px;
+  font-size: 16px;
+}
+.divisao{
+  margin-top: 250px;
+}
+.divretro{
+  margin-top: 250px;
+}
+footer p {
+  font-size: 11px;
+  line-height: 1.4;
+}
+}
